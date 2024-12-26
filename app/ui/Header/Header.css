@@ -1,0 +1,91 @@
+.navbtn {
+  display: block;
+  font-size: 1.4em;
+}
+
+
+.navbtn:hover {
+  color: darkblue !important;
+}
+
+/* Header.css */
+
+/* Ensure the nav items are aligned */
+.navcontainer {
+  display: flex;
+  align-items: center;
+  /* Ensures vertical alignment */
+}
+
+/* Consistent spacing for nav items */
+.nav-item {
+  margin-right: 4em;
+}
+
+/* Make sure the buttons have consistent height and padding */
+.nav-link {
+  padding: 10px 15px;
+  /* Adjust padding as needed */
+  line-height: 1.5;
+  /* Ensures consistent text alignment */
+}
+
+/* Remove any vertical margins or paddings */
+.nav-link {
+  margin: 0;
+  /* No extra margin */
+  padding: 0.5em 1em;
+  /* Ensure padding is consistent */
+}
+
+/* Optional: Styling for search button */
+.form-control {
+  margin-left: 10em;
+  margin-top: 0;
+  /* Align with nav items */
+}
+
+/* Keyframe animation for drop effect */
+@keyframes drop {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animation class for the drop effect */
+.nav-item {
+  opacity: 0;
+  /* Start with hidden */
+}
+
+/* Applying animation with staggered delays */
+.nav-item:nth-child(1) {
+  animation: drop 0.5s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.nav-item:nth-child(2) {
+  animation: drop 0.5s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.nav-item:nth-child(3) {
+  animation: drop 0.5s ease forwards;
+  animation-delay: 0.6s;
+}
+
+.nav-item:nth-child(4) {
+  animation: drop 0.5s ease forwards;
+  animation-delay: 0.8s;
+}
+
+.nav-item:nth-child(5) {
+  animation: drop 0.5s ease forwards;
+  animation-delay: 1s;
+}
